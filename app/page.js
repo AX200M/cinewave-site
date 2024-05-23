@@ -4,23 +4,12 @@ import JellyfinSVG from '../public/jellyfin-svgrepo-com.svg';
 import JellfinVueSVG from '../public/vue-svgrepo-com.svg';
 import PlexSVG from '../public/plex-svgrepo-com.svg';
 import DiscordSVG from '../public/discord-v2-svgrepo-com.svg';
-import { getData } from '../lib/getdata';
 
 export default async function Home() {
-    const posts = await getData()
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-gradient-to-tr from-slate-900 to-purple-900">
 
       <div>
-          {posts.map((post) => {
-            return (
-              <div key={post.id}>
-              <p>{post.title}</p>
-              {/* {JSON.stringify(post)} */}
-              </div>
-
-            )
-          })}
           </div>        
           <div className="items-center space-x-4 m-auto px-5 py-5 bg-slate-500 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-30 border border-slate-500 border-opacity-70">
           <h1 className="text-4xl font-bold text-center">Welcome to Cinewave.</h1>
