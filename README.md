@@ -1,3 +1,8 @@
+
+## Cinewave Site
+
+A landing page WIP that displays the instances of the media server ( Plex, Jellyfin, Sonarr, Radarr ETC ) and sends api requests to periodically check outages and delay. More info and updated Readme to come in later stages of development
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
